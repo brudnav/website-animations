@@ -1,0 +1,314 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@100;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img{
+    width: 400px;
+    object-fit: cover;
+}
+
+body{
+    background-color: #17181a;
+    font-family: "Montserrat", sans-serif;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#logo{
+    color: white;
+    font-family: "Abril Fatface";
+}
+
+.nav-header{
+    min-height: 10vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    width: 80%;
+    margin: auto;
+    padding: 2rem 0rem;
+    z-index: 3;
+    position: relative;
+}
+
+.line1,.line2{
+    width: 3rem;
+    height: 0.2rem;
+    background: white;
+    margin: 0.4rem;
+    pointer-events: none;
+}
+
+.slide{
+    min-height: 100vh;
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #17181a;
+}
+
+.hero-desc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-basis: 25rem;
+    padding-left: 5rem;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.hero-img{
+    position: relative;
+    flex: 1;
+    flex-basis: 25rem;
+    overflow: hidden;
+}
+
+.fashion-span{
+    color: rgb(255,139,93);
+}
+.montain-span{
+    color: rgb(86,124,228);
+}
+.hike-span{
+    color: rgb(205, 67, 177);
+}
+
+.hero-desc h2{
+    font-family: "Abril Fatface";
+    font-size: 3rem;
+}
+
+.hero-desc p {
+    padding: 3rem 0;
+    font-size: 1.5rem;
+    color: rgb(223, 223, 223);
+}
+
+.explore{
+    padding: 1rem 2rem;
+    background: none;
+    border: none;
+    color: white;
+    border: 1px solid white;
+    font-size: 1rem;
+    text-decoration: none;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.nav-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 1;
+    opacity: 1;
+    clip-path: circle(50px at 100% -10%);
+    -webkit-clip-path: circle(50px at 100% -10%);
+}
+
+.burger{
+    cursor: pointer;
+}
+
+.nav-links{
+    font-size: 3rem;
+    flex-basis: 30rem;
+}
+
+.nav-links h3{
+    padding: 1rem 0;
+}
+
+.contact{
+    flex-basis: 30rem;
+}
+
+.contact h2{
+    font-size: 3rem;
+    padding: 2rem 0;
+}
+
+.contact p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.reveal-img,.reveal-text{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #17181a;
+}
+
+
+
+.cursor{
+    width: 3rem;
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    pointer-events: none;
+    transition: all 0.5s ease;
+    transition-property: transform, background-color;
+    transform-origin: 150% 150%;
+}
+
+.scrollmagic-pin-spacer{
+    position: static !important;
+}
+
+.cursor.nav-active{
+    transform: scale(1.5);
+    background-color: rgb(86,124,228);
+}
+
+.cursor-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.7rem;
+}
+
+.cursor.explore-active{
+    transform: scale(1.5);
+    background-color: white;
+}
+
+.title{
+    position: relative;
+    overflow: hidden;
+}
+
+.title-swipe{
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    position: absolute;
+    mix-blend-mode: darken;
+    transform: translateY(100%);
+}
+
+.t-swipe1{
+    background-color: rgb(86,124,228);
+}
+.t-swipe2{
+    background-color: rgb(205, 67, 177);
+}
+.t-swipe3{
+    background-color: rgb(255,139,93);
+}
+
+body.hide{
+   overflow: hidden;
+}
+
+/* Other pages */
+
+.fashion1,.fashion2,.fashion3{
+    min-height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    margin: auto;
+    color: white;
+    margin-top: 5rem;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.fashion-img{
+    height: 80vh;
+    flex-basis: 30rem;
+}
+
+.fashion-text{
+    flex:1;
+    position: relative;
+    flex-basis: 25rem;
+}
+
+.fashion-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.fashion-text h1{
+    font-size: 4rem;
+    padding: 4rem 0rem;
+}
+
+.fashion1 h1{
+    color: rgb(255,139,93)
+}
+.fashion2 h1{
+    color: rgb(205, 67, 177)
+}
+.fashion3 h1{
+    color: rgb(86,124,228)
+}
+
+.fashion-text p{
+    font-size: 1.4rem;
+    padding: 2rem 2rem 0rem 0rem;
+    margin-bottom: 10rem;
+}
+
+.fashion-nr{
+    font-size: 7rem;
+    position: absolute;
+    left: 38%;
+    bottom: 10%;
+    opacity: 0.2;
+}
+
+main{
+    position: absolute;
+}
+
+.swipe{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%)
+}
+
+.swipe1{
+    background-color: rgb(205, 67, 177);
+    z-index: 5;
+}
+.swipe2{
+    background-color: rgb(86,124,228);
+    z-index: 4;
+}
+.swipe3{
+    background-color: rgb(255,139,93);
+    z-index: 3;
+}
